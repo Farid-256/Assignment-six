@@ -5,13 +5,13 @@ const: Block-scoped, cannot be updated or cannot be re-declared.
 
 
 2) What is the difference between map(), forEach(), and filter()?
-Ans: map(): Transforms each element and return a new array.
-forEach(): Exacute a function on each element, but return nothing.
+Ans: map(): Transforms each element and returns a new array.
+forEach(): Exacutes a function on each element, but dose not return anything.
 filter(): Return a new array with elements that pass a condition.
 
 
 3) What are arrow functions in ES6?
-Ans: Arrow function are a concise way to write function useing =>. They don't bind their own this, making them great for callbacks and short logic. Example: const add = () => a + b
+Ans: Arrow functions are a concise way to write function using =>. They don't bind their own this, making them great for callbacks and short logic. Example: const add = (1, 2) => a + b
 
 
 4) How does destructuring assignment work in ES6?
