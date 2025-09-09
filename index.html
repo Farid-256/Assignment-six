@@ -62,7 +62,9 @@
         <!-- BANNER -->
         <section class="bg-[#CFF0DC] flex flex-col md:flex-row justify-between items-center gap-5 md:px-20">
 
-            <img class="w-28 md:w-40 lg:w-96" src="./assets/hero-leaf1.png" alt="leaf">
+            <div class="h-64 w-96 bg-no-repeat bg-center bg-cover md:w-40 lg:w-96"
+                style="background-image: url('./assets/hero-leaf1.png')">
+            </div>
 
 
             <div class="flex flex-col items-center text-center md:w-1/2 py-10">
@@ -80,7 +82,9 @@
             </div>
 
 
-            <img class="w-28 md:w-40 lg:w-96" src="./assets/hero-leaf2.png" alt="leaf">
+            <div class="h-64 w-96 bg-no-repeat bg-center bg-cover md:w-40 lg:w-96"
+                style="background-image: url('./assets/hero-leaf2.png')">
+            </div>
         </section>
 
 
@@ -122,15 +126,18 @@
 
         </main>
 
-        <section class="">
-            <h2 class="text-center font-bold text-3xl my-15">About the Campaign</h2>
-            <div class="flex justify-center items-center gap-10">
-                <div class="mb-10">
-                    <img width="450px" src="./assets/about.png" alt="">
+        <section>
+            <h2 class="text-center font-bold text-3xl my-10">About the Campaign</h2>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+
+
+                <div class="mb-6 md:mb-0">
+                    <img class="w-[300px] md:w-[450px]" src="./assets/about.png" alt="About Campaign">
                 </div>
 
 
-                <div class="space-y-4">
+                <div class="space-y-4 text-center md:text-left">
                     <p class="text-gray-500">
                         Green Earth is a global tree plantation initiative dedicated to fighting <br>
                         climate change. Since our start, we've planted over 500,000 trees <br>
@@ -138,7 +145,7 @@
                         habitats for wildlife, and combat global warming.
                     </p>
 
-                    <ul class="list-disc ml-5 text-gray-500">
+                    <ul class="list-disc ml-5 text-gray-500 text-left">
                         <li>Restoration of natural habitats</li>
                         <li>Improvement of air quality</li>
                         <li>Support for local communities</li>
@@ -146,57 +153,58 @@
                 </div>
 
             </div>
-
         </section>
+
     </section>
 
-    <section class="px-15 py-10 mx-auto bg-[#CFF0DC]">
+    <!-- our-impact-section -->
+    <section class="px-5 py-10 mx-auto bg-[#CFF0DC]">
         <h3 class="text-center font-bold text-2xl py-5">Our Impact</h3>
-        <div class="flex justify-between">
-            <div class="bg-white w-70 flex flex-col justify-center items-center py-5 px-10 rounded-md">
+
+        <!-- Responsive Flex -->
+        <div class="flex flex-col md:flex-row gap-6 md:gap-10 justify-evenly items-center">
+
+            <div class="bg-white w-80 flex flex-col justify-center items-center py-6 px-12 rounded-md shadow">
                 <p class="font-bold text-[#15803D] text-2xl">500K+</p>
                 <small class="text-[#1F2937]">Trees Planted</small>
             </div>
 
-            <div class="bg-white w-70 flex flex-col justify-center items-center py-5 px-10 rounded-md">
+            <div class="bg-white w-80 flex flex-col justify-center items-center py-6 px-12 rounded-md shadow">
                 <p class="font-bold text-[#15803D] text-2xl">120+</p>
                 <small class="text-[#1F2937]">Communities Involved</small>
             </div>
 
-            <div class="bg-white w-70 flex flex-col justify-center items-center py-5 px-10 rounded-md">
+            <div class="bg-white w-80 flex flex-col justify-center items-center py-6 px-12 rounded-md shadow">
                 <p class="font-bold text-[#15803D] text-2xl">30+</p>
                 <small class="text-[#1F2937]">Countries Reached</small>
             </div>
 
         </div>
-    </section> <br> <br>
+    </section>
 
-    <section class="px-15 py-10 mx-auto bg-[#166534]">
 
-        <div class="flex justify-center">
-            <form id="plantForm" class="bg-[#15803D] space-y-2 flex flex-col items-center w-[40%] p-5 rounded">
-                <h2 class="text-center font-bold text-2xl p-2 text-white">Plant a Tree Today</h2>
+    <section class="px-5 py-10 mx-auto bg-[#166534] flex justify-center">
+        <form id="plantForm"
+            class="bg-[#15803D] space-y-3 flex flex-col items-center w-full max-w-md p-6 rounded-lg shadow-lg">
 
-                <input required name="name" placeholder="Your Name" class="p-2 rounded text-gray-600 bg-white w-[80%]">
+            <h2 class="text-center font-bold text-2xl p-2 text-white">Plant a Tree Today</h2>
 
-                <input required name="email" placeholder="Your Email"
-                    class="p-2 rounded text-gray-600 bg-white w-[80%]">
+            <input required name="name" placeholder="Your Name" class="p-2 rounded text-gray-600 bg-white w-full">
 
-                <input required name="qty" placeholder="Number of Trees" type="number" min="1"
-                    class="p-2 rounded bg-white w-[80%]">
+            <input required name="email" placeholder="Your Email" class="p-2 rounded text-gray-600 bg-white w-full">
 
-                <button class="bg-[#FACC15] py-2 px-5 rounded mt-2 w-[80%] font-semibold hover:bg-yellow-400">
-                    Donate Now
-                </button>
-            </form>
-        </div>
+            <input required name="qty" placeholder="Number of Trees" type="number" min="1"
+                class="p-2 rounded bg-white w-full">
+
+            <button class="bg-[#FACC15] py-2 px-5 rounded mt-2 w-full font-semibold hover:bg-yellow-400">
+                Donate Now
+            </button>
+        </form>
     </section>
 
     <footer class="bg-[#14532D] py-10">
         <p class="text-center text-[#FFFFFF]">© 2025 Green Earth. All Rights Reserved.</p>
     </footer>
-
-
 
 
 
@@ -211,6 +219,7 @@
     </script>
 
     <script src="./index.js"></script>
+
 </body>
 
 </html>
